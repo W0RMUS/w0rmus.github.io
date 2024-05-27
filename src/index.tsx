@@ -2,9 +2,9 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(
+// @ts-expect-error - This is a valid call to ReactDOM
+ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>,
-  document.getElementById('root'),
 );
