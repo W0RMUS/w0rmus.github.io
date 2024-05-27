@@ -1,4 +1,4 @@
 export default {
-  base: '/dist/',
+  base: './',
   reactRefresh: true,
 };
