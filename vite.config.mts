@@ -8,6 +8,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
+        dir: 'dist',
         entryFileNames: 'index.js' // This will output the entry chunk as index.js
       }
     }
