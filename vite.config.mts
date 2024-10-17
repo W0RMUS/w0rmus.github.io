@@ -1,14 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import reactRefresh from '@vitejs/plugin-react-refresh';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), reactRefresh()],
   base: './',
   build: {
     rollupOptions: {
       output: {
-        entryFileNames: 'index.js', // This will output your entry chunk as index.js
-      },
-    },
-  },
+        entryFileNames: 'index.js' // This will output the entry chunk as index.js
+      }
+    }
+  }
 });
