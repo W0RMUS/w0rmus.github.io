@@ -5,13 +5,13 @@ function App() {
   return (
     <div>
       <div className="header">
-        <div>&#945;</div>
-        <div>&#946;</div>
-        <div>&#947;</div>
-        <div>&#948;</div>
-        <div>&#949;</div>
-        <div>&#950;</div>
-        <div>&#951;</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
       </div>
       <div className="home-container">
         <h1 className="h1">Markus</h1>

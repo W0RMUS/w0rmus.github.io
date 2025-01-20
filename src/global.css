@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-    background-color: rgb(121, 196, 81);
+    background-color: rgb(80, 158, 202);
     width: 100%;
     min-height: 60px;
     position: sticky;
@@ -16,7 +16,7 @@ body {
 
 .header > div {
     background-color: #000000;
-    color: rgb(121, 196, 81);
+    color: rgb(80, 158, 202);
     margin: 20px;
     padding: 20px;
     font-size: 30px;
@@ -24,11 +24,11 @@ body {
 }
 
 .header > div:hover {
-    background-color: rgb(255, 255, 255);
+    cursor:pointer ;
 }
 
 .header > div:active {
-    background-color: rgb(255, 132, 132);
+    background-color: rgb(39, 39, 39);
 }
 
 .title {
@@ -47,7 +47,7 @@ body {
 }
 
 .h1 {
-    color: rgb(121, 196, 81);
+    color: rgb(80, 158, 202);
     font-size: 74px;
     margin: 0;
 }
