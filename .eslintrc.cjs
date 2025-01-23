@@ -19,7 +19,8 @@ module.exports = {
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'comma-dangle': ['error', 'never'], // Add this rule to disable trailing commas
-    'unused-imports/no-unused-imports': 'error'
+    'unused-imports/no-unused-imports': 'error',
+    'react/react-in-jsx-scope': 'off'
   },
   settings: {
     react: {

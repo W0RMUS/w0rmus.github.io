@@ -1,0 +1,91 @@
+/src
+  /assets               # Static assets like images, fonts, icons, etc.
+    /images
+      logo.png
+      banner.jpg
+    /fonts
+      OpenSans-Regular.ttf
+  /components           # Reusable components across pages
+    /Button
+      Button.tsx        # React component for button
+      Button.css        # Styles specific to Button
+      index.ts          # Exports Button for easier imports
+    /Header
+      Header.tsx        # React component for header
+      Header.css        # Styles specific to Header
+      index.ts          # Exports Header for easier imports
+    /Modal
+      Modal.tsx         # React component for modal dialogs
+      Modal.css         # Styles specific to Modal
+      index.ts          # Exports Modal for easier imports
+    /Form
+      /TextInput
+        TextInput.tsx   # Reusable text input component
+        TextInput.css   # Styles specific to TextInput
+        index.ts        # Exports TextInput
+      /Checkbox
+        Checkbox.tsx    # Reusable checkbox component
+        Checkbox.css    # Styles specific to Checkbox
+        index.ts        # Exports Checkbox
+      index.ts          # Main form components export
+  /pages                # Views or specific pages of the app
+    /Home
+      Home.tsx          # Home page component
+      Home.css          # Styles specific to Home page
+      index.ts          # Exports Home page
+    /About
+      About.tsx         # About page component
+      About.css         # Styles specific to About page
+      index.ts          # Exports About page
+    /Dashboard
+      /Overview
+        Overview.tsx    # Overview section of Dashboard
+        Overview.css    # Styles for Overview section
+        index.ts        # Exports Overview
+      /Analytics
+        Analytics.tsx   # Analytics section of Dashboard
+        Analytics.css   # Styles for Analytics section
+        index.ts        # Exports Analytics
+      index.ts          # Main Dashboard export
+  /services             # API calls or data fetching logic
+    api.ts              # Centralized API service
+    auth.ts             # Authentication related services
+    user.ts             # User related services
+  /hooks                # Custom hooks
+    /useAuth
+      useAuth.ts        # Custom hook for handling authentication
+    /useFetch
+      useFetch.ts       # Custom hook for data fetching
+    index.ts            # Exports all hooks
+  /utils                # Utility functions
+    formatDate.ts       # Function to format dates
+    calculateTotal.ts   # Function to calculate totals
+    index.ts            # Exports utility functions
+  /context              # React context for state management
+    /UserContext
+      UserContext.tsx   # Context provider for user-related state
+      UserContext.css   # Optional styles related to user context
+      index.ts          # Exports UserContext provider
+  /styles               # Global styles and themes
+    global.css          # Global styles for the app
+    theme.css           # Theme-related styles
+    variables.css       # CSS variables for consistent theming
+  /constants            # Configuration constants
+    config.ts           # App-wide configuration values (API URLs, etc.)
+  /App.tsx              # Main app component
+  /index.tsx            # Entry point file where React DOM renders App
+  /routes.tsx           # Routes setup for the app (routing logic)
+  /types.ts             # TypeScript types and interfaces
+  /store                # Redux or state management setup (optional)
+    /reducers
+      userReducer.ts    # Reducer for user state
+    /actions
+      userActions.ts    # Action creators for user-related actions
+    store.ts            # Store setup
+  /tests                # Unit and integration tests
+    /components
+      Header.test.tsx   # Tests for Header component
+    /pages
+      Home.test.tsx     # Tests for Home page
+    /services
+      api.test.ts       # Tests for API services

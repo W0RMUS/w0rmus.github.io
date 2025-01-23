@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 
+/* Header */
 .header {
   background-color: rgb(80, 158, 202);
   width: 100%;
@@ -28,7 +29,7 @@ body {
 }
 
 .title {
-  color: white;
+  color: rgb(255, 0, 0);
   font-size: 32px;
   margin: 0;
 }
