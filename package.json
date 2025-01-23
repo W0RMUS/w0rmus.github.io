@@ -11,7 +11,8 @@
     "dev": "vite",
     "build": "npm run lint && npm run prettier && npm run type-check && vite build",
     "deploy": "vite build && gh-pages -d dist",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "clean": "npm run prettier -- --write && npm run lint:fix && npm run type-check -- --noEmit"
   },
   "keywords": [],
   "author": "w0rmus",
@@ -32,6 +33,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
     "gh-pages": "^6.1.1",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",

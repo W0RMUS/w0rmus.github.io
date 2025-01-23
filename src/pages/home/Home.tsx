@@ -1,21 +1,16 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Drawer } from 'antd';
 import './Home.css';
 
 function Home() {
   return (
     <div>
       <div className="header">
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
-        <Button type="primary">Primary</Button>
+        <Drawer title="Drawer Title">
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
       </div>
       <div className="home-container">
         <h1 className="h1">Markus</h1>

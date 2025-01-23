@@ -13,11 +13,13 @@ module.exports = {
       jsx: true // Allows for the parsing of JSX
     }
   },
+  plugins: ['unused-imports'],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    'comma-dangle': ['error', 'never'] // Add this rule to disable trailing commas
+    'comma-dangle': ['error', 'never'], // Add this rule to disable trailing commas
+    'unused-imports/no-unused-imports': 'error'
   },
   settings: {
     react: {
