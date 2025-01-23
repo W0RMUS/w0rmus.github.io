@@ -17,7 +17,7 @@ function Home() {
     <div>
       <div className="header">
         <Button type="primary" onClick={showDrawer}>
-          Open Drawer
+          <p className="menu">Menu</p>
         </Button>
         <Drawer
           title="Drawer Title"
@@ -31,7 +31,7 @@ function Home() {
         </Drawer>
       </div>
       <div className="home-container">
-        <h1 className="h1">Markus</h1>
+        <h1 className="content">Markus</h1>
       </div>
     </div>
   );

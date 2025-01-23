@@ -2,36 +2,14 @@ body {
   margin: 0;
 }
 
-/* Header */
 .header {
   background-color: rgb(80, 158, 202);
   width: 100%;
-  min-height: 4rem;
+  padding: 1rem;
+  top: 0;
   position: sticky;
   display: flex;
-  top: 0;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.header > div {
-  background-color: #000000;
-  color: rgb(80, 158, 202);
-}
-
-.header > div:hover {
-  cursor: pointer;
-}
-
-.header > div:active {
-  background-color: rgb(39, 39, 39);
-}
-
-.title {
-  color: rgb(255, 0, 0);
-  font-size: 32px;
-  margin: 0;
+  justify-content: left;
 }
 
 .home-container {
@@ -43,8 +21,15 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.h1 {
+.content {
   color: rgb(80, 158, 202);
   font-size: 74px;
+  margin: 0;
+}
+
+.menu {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
 }
