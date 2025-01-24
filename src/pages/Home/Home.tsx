@@ -20,14 +20,15 @@ function Home() {
           <p className="menu">Menu</p>
         </Button>
         <Drawer
-          title="Drawer Title"
+          title="Options"
           placement="left"
           onClose={closeDrawer}
           open={open}
+          width={200}
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <p>Option one</p>
+          <p>Option two</p>
+          <p>Option three</p>
         </Drawer>
       </div>
       <div className="home-container">
