@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Drawer, Button } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
 import './Home.css';
 
 function Home() {
@@ -16,23 +17,23 @@ function Home() {
   return (
     <div>
       <div className="header">
-        <Button type="primary" onClick={showDrawer}>
-          <p className="menu">Menu</p>
-        </Button>
-        <Drawer
-          title="Options"
-          placement="left"
-          onClose={closeDrawer}
-          open={open}
-          width={200}
-        >
-          <p>Option one</p>
-          <p>Option two</p>
-          <p>Option three</p>
+        <Button
+          color="default"
+          variant="filled"
+          type="primary"
+          onClick={showDrawer}
+          icon={<MenuOutlined />}
+        ></Button>
+        <p className="title">Markus Einan</p>
+
+        <Drawer placement="left" onClose={closeDrawer} open={open} width={220}>
+          <p>About me</p>
+          <p>Skills</p>
+          <p>Projects</p>
         </Drawer>
       </div>
       <div className="home-container">
-        <h1 className="content">Markus</h1>
+        <h1 className="content">Web Developer</h1>
       </div>
     </div>
   );
