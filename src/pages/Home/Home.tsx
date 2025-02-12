@@ -1,39 +1,15 @@
-import { useState } from 'react';
-import { Drawer, Button } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
 import './Home.css';
-
+import Header from '../../components/Header';
+import profilbildeUrl from '../../assets/images/Profilbilde.jpg';
+import { Divider } from 'antd';
 function Home() {
-  const [open, setOpen] = useState(false);
-
-  const showDrawer = () => {
-    setOpen(true);
-  };
-
-  const closeDrawer = () => {
-    setOpen(false);
-  };
-
   return (
     <div>
-      <div className="header">
-        <Button
-          color="default"
-          variant="filled"
-          type="primary"
-          onClick={showDrawer}
-          icon={<MenuOutlined />}
-        ></Button>
-        <p className="title">Markus Einan</p>
-
-        <Drawer placement="left" onClose={closeDrawer} open={open} width={220}>
-          <p>About me</p>
-          <p>Skills</p>
-          <p>Projects</p>
-        </Drawer>
-      </div>
+      <Header />
       <div className="home-container">
+        <img src={profilbildeUrl} alt="Profilbilde" />
         <h1 className="content">Web Developer</h1>
+        <Divider />
       </div>
     </div>
   );
