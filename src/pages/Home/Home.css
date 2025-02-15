@@ -17,12 +17,12 @@ body {
 }
 
 .imageContainer {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .content {
   color: rgb(168, 168, 168);
-  font-size: 74px;
+  font-size: 3rem;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -30,7 +30,8 @@ body {
 .home-container img {
   width: 20rem;
   height: 20rem;
-  border-radius: 50%;
+  border-radius: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .container {
